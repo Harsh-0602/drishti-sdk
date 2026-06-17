@@ -5,8 +5,10 @@ Run: python e2e_test.py
 import time
 import sys
 
+import os
+
 # ── Config ────────────────────────────────────────────────────────────
-API_KEY  = "dk_90230dc6d9c5c2f7e8a1b4f3d6e2a5b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4"  # <-- replace with full key
+API_KEY  = os.environ.get("DRISHTI_API_KEY", "REPLACE_WITH_YOUR_KEY")
 ENDPOINT = "https://drishti-backend-3fks.onrender.com"  # correct Render URL
 
 # ── Test ──────────────────────────────────────────────────────────────
